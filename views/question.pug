@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title The Nmber Quiz        
+        script(src='/question.js')       
+    body         
+        h1 The Nmber Quiz
+        h3 Question #{count} / 5
+        form(action="/question"  method="post") 
+            p Your current score is #{myScore}.          
+            p Guess the next number in the sequence.
+            p #{myQuestion}
+            p Your answer: 
+                input(type="text" name="answer" value="") 
+            input(type="submit"  id="mySubmit"  value="Sbumit" #{count})        
+            input(type="hidden" name="mySessionId" value=`${mySessionId}` ) 

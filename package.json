@@ -1,0 +1,19 @@
+{
+  "name": "numberquizlab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "numberQuizLab.js",
+  "scripts": {
+    "start": "node numberQuizLab.js"
+  },
+  "author": "tao wu",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "jade": "^1.11.0",
+    "pug": "^3.0.2",
+    "uuid": "^8.3.2"
+  }
+}
